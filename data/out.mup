@@ -3,23 +3,39 @@
  "title": "Bibliography",
  "id": 1,
  "attr": {
-    "style": {},
+    "style": {
+         "background": "#b5dee6"
+},
     "collapsed": false
  },
  "ideas": {
 
   "1":  {
-   "title": "Relation Extraction",
+   "title": "Unsorted",
    "id": 2,
    "attr": {
-      "style": {},
+      "style": {
+           "background": "#c0a1e6"
+},
+      "collapsed": true
+   },
+   "ideas": {
+      }
+  },
+  "-2":  {
+   "title": "Relation Extraction",
+   "id": 3,
+   "attr": {
+      "style": {
+           "background": "#bde6c5"
+},
       "collapsed": true
    },
    "ideas": {
 
     "1":  {
      "title": "Ananiadou2010a",
-     "id": 3,
+     "id": 4,
      "attr": {
        "attachment": {
           "contentType": "text/html",
@@ -33,16 +49,18 @@
     },
     "-2":  {
      "title": "Events",
-     "id": 4,
+     "id": 5,
      "attr": {
-        "style": {},
+        "style": {
+             "background": "#abb8e6"
+},
         "collapsed": true
      },
      "ideas": {
 
       "1":  {
        "title": "Aone2000",
-       "id": 5,
+       "id": 6,
        "attr": {
          "attachment": {
             "contentType": "text/html",
@@ -57,7 +75,7 @@
     },
     "3":  {
      "title": "Aone2000",
-     "id": 6,
+     "id": 7,
      "attr": {
        "attachment": {
           "contentType": "text/html",
@@ -71,7 +89,7 @@
     },
     "-4":  {
      "title": "Arighi2013",
-     "id": 7,
+     "id": 8,
      "attr": {
         "style": {},
         "collapsed": true
@@ -80,28 +98,46 @@
         }
     }      }
   },
-  "-2":  {
-   "title": "Unsorted",
-   "id": 8,
+  "3":  {
+   "title": "ZThesis",
+   "id": 9,
    "attr": {
-      "style": {},
+      "style": {
+           "background": "#e6abb7"
+},
       "collapsed": true
    },
    "ideas": {
-      }
+
+    "1":  {
+     "title": "arampatzis1998",
+     "id": 10,
+     "attr": {
+       "attachment": {
+          "contentType": "text/html",
+          "content": "\n@article{arampatzis_1998,\nauthor = {Arampatzis, Avi T and Tsoris, T and Koster, Cornelis H A and {Van Der Weide}, Th. P},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/1998\/1998\\_Phase-based information retrieval\\_Arampatzis et al.pdf:pdf},\njournal = {Information Processing \\& Management},\nmendeley-groups = {PhD\/ZThesis,PhD},\nnumber = {6},\npages = {693--707},\npublisher = {Elsevier},\ntitle = {{Phase-based information retrieval}},\nvolume = {34},\nyear = {1998}\n}\n}"
+        },
+        "style": {},
+        "collapsed": true
+     },
+     "ideas": {
+        }
+    }      }
   },
-  "3":  {
+  "-4":  {
    "title": "State Of The Art Presentation",
-   "id": 9,
+   "id": 11,
    "attr": {
-      "style": {},
+      "style": {
+           "background": "#d8b5e6"
+},
       "collapsed": true
    },
    "ideas": {
 
     "1":  {
      "title": "Ananiadou2010a",
-     "id": 10,
+     "id": 12,
      "attr": {
        "attachment": {
           "contentType": "text/html",
@@ -114,35 +150,13 @@
         }
     }      }
   },
-  "-4":  {
-   "title": "Zorana",
-   "id": 11,
-   "attr": {
-      "style": {},
-      "collapsed": true
-   },
-   "ideas": {
-
-    "1":  {
-     "title": "arampatzis1998",
-     "id": 12,
-     "attr": {
-       "attachment": {
-          "contentType": "text/html",
-          "content": "\n@article{arampatzis_1998,\nauthor = {Arampatzis, Avi T and Tsoris, T and Koster, Cornelis H A and {Van Der Weide}, Th. P},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/1998\/1998\\_Phase-based information retrieval\\_Arampatzis et al.pdf:pdf},\njournal = {Information Processing \\& Management},\nmendeley-groups = {PhD\/Zorana,PhD},\nnumber = {6},\npages = {693--707},\npublisher = {Elsevier},\ntitle = {{Phase-based information retrieval}},\nvolume = {34},\nyear = {1998}\n}\n}"
-        },
-        "style": {},
-        "collapsed": true
-     },
-     "ideas": {
-        }
-    }      }
-  },
   "5":  {
    "title": "Semantics",
    "id": 13,
    "attr": {
-      "style": {},
+      "style": {
+           "background": "#a1e6c5"
+},
       "collapsed": true
    },
    "ideas": {
@@ -151,7 +165,9 @@
      "title": "WordNet",
      "id": 14,
      "attr": {
-        "style": {},
+        "style": {
+             "background": "#b0cde6"
+},
         "collapsed": true
      },
      "ideas": {
@@ -190,7 +206,9 @@
    "title": "Biomedical IE",
    "id": 17,
    "attr": {
-      "style": {},
+      "style": {
+           "background": "#e6d1b8"
+},
       "collapsed": true
    },
    "ideas": {

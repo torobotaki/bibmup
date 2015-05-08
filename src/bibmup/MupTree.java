@@ -1,8 +1,11 @@
 package bibmup;
 
+import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Random;
 
 public class MupTree  {
 	MupObject root = null;
@@ -36,7 +39,7 @@ public class MupTree  {
 
 	public void writeMindMup(String filename) throws IOException{
 		BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
-		int num = writeNode(0, 0, 1, root, writer);
+		int num = writeNode(0, 0, 1, root, writer, 0);
 		writer.close();
 		System.out.println("Wrote "+num+" nodes");
 	}
@@ -55,7 +58,17 @@ public class MupTree  {
 	//			}
 	//		
 
-	public Integer writeNode(Integer rank, Integer tabs, Integer id, MupObject node, BufferedWriter writer) throws IOException{
+	public Integer writeNode(Integer rank, Integer tabs, Integer id, MupObject node, BufferedWriter writer, Integer depth) throws IOException{
+		String colour = "";
+		if (!(node instanceof BibTeXEntry)) {
+			Random rand = new Random();
+			float hue = rand.nextFloat();
+			// Saturation between 0.1 and 0.3
+			float saturation = (rand.nextInt(2000) + 1000) / 10000f;
+			float luminance = 0.9f;
+			Color color = Color.getHSBColor(hue, saturation, luminance);
+			colour =  Integer.toHexString(color.getRGB()).substring(2);
+		}
 		String tabulation = "";
 		for (int i=0; i< tabs;i++){
 			tabulation+="  ";
@@ -87,7 +100,18 @@ public class MupTree  {
 			writer.write(tabulation+"      \"content\": "+quote(node.attachment)+"\n");
 			writer.write(tabulation+"    },\n");
 		}
-		writer.write(tabulation+"    \"style\": {},\n");
+		//		  "style": {
+		//	          "background": "#FFFF00"
+		//	        },
+
+		if (colour.length()==0) {
+			writer.write(tabulation+"    \"style\": {},\n");
+		}
+		else {
+			writer.write(tabulation+"    \"style\": {\n");
+			writer.write(tabulation+"         \"background\": \"#"+colour+"\"\n},\n");
+
+		}
 		if(node.equals(root)){
 			writer.write(tabulation+"    \"collapsed\": false\n");
 		}
@@ -100,7 +124,7 @@ public class MupTree  {
 		tabs++;
 		int rightORleft = 1;
 		for (MupObject child:node.children){
-			id = writeNode(rightORleft*childNo, tabs, id, child, writer);
+			id = writeNode(rightORleft*childNo, tabs, id, child, writer, depth+1);
 			rightORleft *= -1;
 			childNo++;
 		}
