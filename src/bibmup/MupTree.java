@@ -4,7 +4,9 @@ import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Comparator;
 import java.util.Random;
+import java.util.TreeSet;
 
 public class MupTree  {
 	MupObject root = null;
@@ -124,7 +126,9 @@ public class MupTree  {
 		Integer childNo = 1;
 		tabs++;
 		int rightORleft = 1;
-		for (MupObject child:node.children){
+		TreeSet<MupObject> tree = new TreeSet<MupObject>(new NodeComparator());
+		tree.addAll(node.children);
+		for (MupObject child:tree){
 			id = writeNode(rightORleft*childNo, tabs, id, child, writer, depth+1);
 			rightORleft *= -1;
 			childNo++;
@@ -135,6 +139,15 @@ public class MupTree  {
 	}
 
 
+	class NodeComparator implements Comparator<MupObject>{
+
+		@Override
+		public int compare(MupObject o1, MupObject o2) {
+			// TODO Auto-generated method stub
+			return o1.name.compareTo(o2.name);
+		}
+		
+	}
 	public static String quote(String string) {
 		if (string == null || string.length() == 0) {
 			return "\"\"";

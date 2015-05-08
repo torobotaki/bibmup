@@ -73,7 +73,7 @@ public class BibTeXLib {
 					String keywords = line.split("=")[1];
 					String[] kwords = keywords.split(",");
 					for (String s:kwords) {
-//						Pattern.compile("stores.*store.*product").matcher(someString).find();
+						//						Pattern.compile("stores.*store.*product").matcher(someString).find();
 
 						if (Pattern.compile("[a-zA-Z]").matcher(s).find()) {
 							s = makeTitle(s);
@@ -93,17 +93,18 @@ public class BibTeXLib {
 		StringBuffer res = new StringBuffer();
 		String[] strArr = s.split("\\s+");
 		for (String str : strArr) {
-			char[] stringArray = str.trim().toCharArray();
-			stringArray[0] = Character.toUpperCase(stringArray[0]);
-			str = new String(stringArray);
-
+			if (!str.matches("[A-Z]+")){
+				char[] stringArray = str.trim().toCharArray();
+				stringArray[0] = Character.toUpperCase(stringArray[0]);
+				str = new String(stringArray);
+			}
 			res.append(str).append(" ");
 		}
 		return res.toString();
 	}
 
 	public static String makeTitle(String s) {
-		s = capitalize(s.replace("{", "").replace("}","").replaceAll("[^a-zA-Z0-9\\s]", "").trim()).trim();
+		s = capitalize(s.replace("{", "").replace("}","").replaceAll("\\-", " ").replaceAll("[^a-zA-Z0-9\\s]", "").trim()).trim();
 		return s;
 	}
 
@@ -121,7 +122,7 @@ public class BibTeXLib {
 				}
 			}
 		}
-			
+
 	}
 
 	public void prune(Integer n){
