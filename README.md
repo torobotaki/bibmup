@@ -26,7 +26,7 @@ In particular I exported this by selecting all the documents I wanted and did a 
 ### Type of nodes
 
 1. For actual bibliographical entries, it creates leaf nodes. It adds the whole BibTeX formatted reference as an attachment.
-2. It creates theme nodes, grouping entries, based on the entries keywords and other meta data.
+2. It creates theme nodes, grouping entries, based on the entries keywords and other meta data. These nodes will be coloured randomly. 
 
 ### Where it gets the categories
 
