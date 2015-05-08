@@ -10,6 +10,7 @@ public class Config {
 	public ArrayList<String> hierchicalKeys = new ArrayList<String>();
 	public Integer prune = 0;
 	public String rootName = "";
+	public String unsortedName = "";
 	
 	
 	public Config(){
@@ -19,7 +20,7 @@ public class Config {
 		hierchicalKeys.add("mendeley-groups");
 		prune = 3;
 		rootName = "Bibliography";
-		
+		unsortedName = "Unsorted";
 	}
 
 	public Config(String filename) throws Exception {
@@ -44,6 +45,16 @@ public class Config {
 				}
 				else {
 					prune = Integer.valueOf(parts[1].trim());
+				}
+			}
+			else if(line.startsWith("unsortedName")) {
+				String[] parts = line.split("=");
+				if (parts.length != 2) {
+					buffer.close();
+					throw (new Exception("problem with config line: "+line));
+				}
+				else {
+					unsortedName = parts[1].trim();
 				}
 			}
 			else if(line.startsWith("rootName")) {
