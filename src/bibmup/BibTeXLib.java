@@ -124,6 +124,24 @@ public class BibTeXLib {
 			
 	}
 
+	public void prune(Integer n){
+		HashSet<MupObject> ideaValues = new HashSet<MupObject>();
+		ideaValues.addAll(ideas.values());
+		for (MupObject idea:ideaValues){
+			HashSet<BibTeXEntry> childEntries = idea.getChildEntries();
+			if (childEntries.size() <= n){
+				for (MupObject parent:idea.parents){
+					parent.addChildren(childEntries);
+				}
+				ideas.remove(idea.name);
+				for (BibTeXEntry child:childEntries) {
+					child.parents.remove(idea);
+					idea.children.remove(child);
+				}
+				System.out.println("Removed category "+idea.name+" because we're pruning categories with equal or less than "+n+" entries");
+			}
+		}
+	}
 
 
 }

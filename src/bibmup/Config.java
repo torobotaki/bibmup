@@ -18,7 +18,7 @@ public class Config {
 		flatKeys.add("keywords");
 		flatKeys.add("mendeley-tags");
 		hierchicalKeys.add("mendeley-groups");
-		prune = 3;
+		prune = 0;
 		rootName = "Bibliography";
 		unsortedName = "Unsorted";
 	}

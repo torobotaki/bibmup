@@ -1,0 +1,6 @@
+rootIgnore=PhD
+prune = 0
+flatKeys= keywords, mendeley-tags
+hierarchicalKeys = mendeley-groups
+rootName = biblio
+unsortedName = Bin

@@ -31,6 +31,9 @@ public class MupObject {
 	public void addChild(MupObject child) {
 		children.add(child);
 	}
+	public void addChildren(HashSet<BibTeXEntry> childEntries) {
+		children.addAll(childEntries);
+	}
 
 	public boolean isParentOf(MupObject p){
 		return (parents.contains(p));
@@ -48,5 +51,15 @@ public class MupObject {
 		}
 		return false;
 	}
+
 	
+	public HashSet<BibTeXEntry> getChildEntries(){
+		HashSet<BibTeXEntry> childEntries = new HashSet<BibTeXEntry>();
+		for (MupObject child:children){
+			if ((child instanceof BibTeXEntry)) {
+				childEntries.add((BibTeXEntry)child);
+			}
+		}
+		return childEntries;
+	}
 }
