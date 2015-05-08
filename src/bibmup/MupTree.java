@@ -36,8 +36,9 @@ public class MupTree  {
 
 	public void writeMindMup(String filename) throws IOException{
 		BufferedWriter writer = new BufferedWriter(new FileWriter(filename));
-		writeNode(0, 0, 1, root, writer);
+		int num = writeNode(0, 0, 1, root, writer);
 		writer.close();
+		System.out.println("Wrote "+num+" nodes");
 	}
 
 	//	Format from: https://github.com/mindmup/mapjs/wiki/Data-Format
@@ -59,120 +60,103 @@ public class MupTree  {
 		for (int i=0; i< tabs;i++){
 			tabulation+="  ";
 		}
-		String line = "";
 
-		if (rank != 0) {
-			line = tabulation+"\""+rank+"\":  "+"{\n";
+		if (rank == 0) {
+			writer.write(tabulation+"{\n");
+
+		}
+		else if (rank ==1 ){ 
+			writer.write("\n"+tabulation+"\""+rank+"\":  "+"{\n");
+
 		}
 		else {
-			line = tabulation+"{\n";
+			writer.write(",\n"+tabulation+"\""+rank+"\":  "+"{\n");
 		}
-		writer.write(line);
+		
+		
 		if(node.equals(root)){
-			line="\"formatVersion\": 2,\n";
-			writer.write(line);
+			writer.write("\"formatVersion\": 2,\n");
 		}
-		line = tabulation+" \"title\": \""+node.name+"\",\n";
-		writer.write(line);
-		line = tabulation+" \"id\": "+id+",\n";
-		writer.write(line);
+		writer.write(tabulation+" \"title\": \""+node.name+"\",\n");
+		writer.write(tabulation+" \"id\": "+id+",\n");
 		id++;
-		line = tabulation+" \"attr\": {\n";
-		writer.write(line);
+		writer.write(tabulation+" \"attr\": {\n");
 		if (node.attachment.length()!=0){
-			line = tabulation+"   \"attachment\": {\n";
-			writer.write(line);
-			line = tabulation+"      \"contentType\": \"text/html\",\n";
-			writer.write(line);
-			line = tabulation+"      \"content\": "+quote(node.attachment)+"\n";
-			writer.write(line);
-			line = tabulation+"    },\n";
-			writer.write(line);
+			writer.write(tabulation+"   \"attachment\": {\n");
+			writer.write(tabulation+"      \"contentType\": \"text/html\",\n");
+			writer.write(tabulation+"      \"content\": "+quote(node.attachment)+"\n");
+			writer.write(tabulation+"    },\n");
 		}
-		line = tabulation+"    \"style\": {}\n";
-		writer.write(line);
-		line = tabulation+" },\n";
-		writer.write(line);
-		line = tabulation+" \"ideas\": {\n";
-		writer.write(line);
+		writer.write(tabulation+"    \"style\": {}\n");
+		writer.write(tabulation+"    \"colapsed\": \"true\"\n");
+		writer.write(tabulation+" },\n");
+		writer.write(tabulation+" \"ideas\": {\n");
 		Integer childNo = 1;
-		boolean first = true;
+		tabs++;
+		int rightORleft = 1;
 		for (MupObject child:node.children){
-			if (!first) {
-				line = tabulation+"    },\n";
-				writer.write(line);
-			}
-			tabs++;
-			id = writeNode(childNo, tabs, id, child, writer);
+			id = writeNode(rightORleft*childNo, tabs, id, child, writer);
+			rightORleft *= -1;
 			childNo++;
-			first = false;
 		}
-		line = tabulation+"    }\n";
-		writer.write(line);
-		line = tabulation+"}";
+		writer.write(tabulation+"    }\n");  //close ideas
+		writer.write(tabulation+"}");
 		return id;
 	}
 
-//	private String formatAttachment(String s){
-//		s = s.replaceAll("\"","\\\"");
-//		s= s.replaceAll("\n", "</div><div>");
-//		s ="<div>"+s+"</div>";
-//		return s;
-//	}
-//	
-	
+
 	public static String quote(String string) {
-        if (string == null || string.length() == 0) {
-            return "\"\"";
-        }
+		if (string == null || string.length() == 0) {
+			return "\"\"";
+		}
 
-        char         c = 0;
-        int          i;
-        int          len = string.length();
-        StringBuilder sb = new StringBuilder(len + 4);
-        String       t;
+		char         c = 0;
+		int          i;
+		int          len = string.length();
+		StringBuilder sb = new StringBuilder(len + 4);
+		String       t;
 
-        sb.append('"');
-        for (i = 0; i < len; i += 1) {
-            c = string.charAt(i);
-            switch (c) {
-            case '\\':
-            case '"':
-                sb.append('\\');
-                sb.append(c);
-                break;
-            case '/':
-//                if (b == '<') {
-                    sb.append('\\');
-//                }
-                sb.append(c);
-                break;
-            case '\b':
-                sb.append("\\b");
-                break;
-            case '\t':
-                sb.append("\\t");
-                break;
-            case '\n':
-                sb.append("\\n");
-                break;
-            case '\f':
-                sb.append("\\f");
-                break;
-            case '\r':
-               sb.append("\\r");
-               break;
-            default:
-                if (c < ' ') {
-                    t = "000" + Integer.toHexString(c);
-                    sb.append("\\u" + t.substring(t.length() - 4));
-                } else {
-                    sb.append(c);
-                }
-            }
-        }
-        sb.append('"');
-        return sb.toString();
-    }
-	
+		sb.append('"');
+		for (i = 0; i < len; i += 1) {
+			c = string.charAt(i);
+			switch (c) {
+			case '\\':
+			case '"':
+				sb.append('\\');
+				sb.append(c);
+				break;
+			case '/':
+				//                if (b == '<') {
+				sb.append('\\');
+				//                }
+				sb.append(c);
+				break;
+			case '\b':
+				sb.append("\\b");
+				break;
+			case '\t':
+				sb.append("\\t");
+				break;
+			case '\n':
+				sb.append("\\n");
+				break;
+			case '\f':
+				sb.append("\\f");
+				break;
+			case '\r':
+				sb.append("\\r");
+				break;
+			default:
+				if (c < ' ') {
+					t = "000" + Integer.toHexString(c);
+					sb.append("\\u" + t.substring(t.length() - 4));
+				} else {
+					sb.append(c);
+				}
+			}
+		}
+		sb.append('"');
+		return sb.toString();
+	}
+
 }

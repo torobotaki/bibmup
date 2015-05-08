@@ -72,8 +72,10 @@ public class BibTeXLib {
 					String keywords = line.split("=")[1];
 					String[] kwords = keywords.split(",");
 					for (String s:kwords) {
-						s = makeTitle(s);
-						ideas = entry.addParent(s, ideas);
+						if (s.matches("[a-zA-Z]")) {
+							s = makeTitle(s);
+							ideas = entry.addParent(s, ideas);
+						}
 					}
 				}
 			}
@@ -85,7 +87,7 @@ public class BibTeXLib {
 
 	public static String capitalize(String s) {
 		StringBuffer res = new StringBuffer();
-		String[] strArr = s.split(" ");
+		String[] strArr = s.split("\\s+");
 		for (String str : strArr) {
 			char[] stringArray = str.trim().toCharArray();
 			stringArray[0] = Character.toUpperCase(stringArray[0]);
@@ -97,7 +99,7 @@ public class BibTeXLib {
 	}
 
 	public static String makeTitle(String s) {
-		s = capitalize(s.replace("{", "").replace("}","").trim()).trim();
+		s = capitalize(s.replace("{", "").replace("}","").replaceAll("[^a-zA-Z0-9\\s]", "").trim()).trim();
 		return s;
 	}
 
