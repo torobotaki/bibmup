@@ -1,0 +1,456 @@
+{
+"formatVersion": 2,
+ "title": "Bibliography",
+ "id": 1,
+ "attr": {
+    "style": {}
+ },
+ "ideas": {
+  "1":  {
+   "title": "Challenges",
+   "id": 2,
+   "attr": {
+      "style": {}
+   },
+   "ideas": {
+    "1":  {
+     "title": "Arighi2013",
+     "id": 3,
+     "attr": {
+        "style": {}
+     },
+     "ideas": {
+        }
+      }
+    },
+    "2":  {
+     "title": "Biocreative",
+     "id": 4,
+     "attr": {
+        "style": {}
+     },
+     "ideas": {
+      "1":  {
+       "title": "Arighi2013",
+       "id": 5,
+       "attr": {
+          "style": {}
+       },
+       "ideas": {
+          }
+        }
+    },
+      "3":  {
+       "title": "Terminology As Topic",
+       "id": 6,
+       "attr": {
+          "style": {}
+       },
+       "ideas": {
+        "1":  {
+         "title": "Ananiadou2010a",
+         "id": 7,
+         "attr": {
+           "attachment": {
+              "contentType": "text/html",
+              "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+            },
+            "style": {}
+         },
+         "ideas": {
+            }
+          }
+    },
+        "4":  {
+         "title": "Signal Transduction",
+         "id": 8,
+         "attr": {
+            "style": {}
+         },
+         "ideas": {
+          "1":  {
+           "title": "Ananiadou2010a",
+           "id": 9,
+           "attr": {
+             "attachment": {
+                "contentType": "text/html",
+                "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+              },
+              "style": {}
+           },
+           "ideas": {
+              }
+            }
+    },
+          "5":  {
+           "title": "Protein Interaction Mapping",
+           "id": 10,
+           "attr": {
+              "style": {}
+           },
+           "ideas": {
+            "1":  {
+             "title": "Ananiadou2010a",
+             "id": 11,
+             "attr": {
+               "attachment": {
+                  "contentType": "text/html",
+                  "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                },
+                "style": {}
+             },
+             "ideas": {
+                }
+              }
+    },
+            "6":  {
+             "title": "Documentation",
+             "id": 12,
+             "attr": {
+                "style": {}
+             },
+             "ideas": {
+              "1":  {
+               "title": "Ananiadou2010a",
+               "id": 13,
+               "attr": {
+                 "attachment": {
+                    "contentType": "text/html",
+                    "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                  },
+                  "style": {}
+               },
+               "ideas": {
+                  }
+                }
+    },
+              "7":  {
+               "title": "Periodicals As Topic",
+               "id": 14,
+               "attr": {
+                  "style": {}
+               },
+               "ideas": {
+                "1":  {
+                 "title": "Ananiadou2010a",
+                 "id": 15,
+                 "attr": {
+                   "attachment": {
+                      "contentType": "text/html",
+                      "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                    },
+                    "style": {}
+                 },
+                 "ideas": {
+                    }
+                  }
+    },
+                "8":  {
+                 "title": "Overview",
+                 "id": 16,
+                 "attr": {
+                    "style": {}
+                 },
+                 "ideas": {
+                  "1":  {
+                   "title": "Arighi2013",
+                   "id": 17,
+                   "attr": {
+                      "style": {}
+                   },
+                   "ideas": {
+                      }
+                    }
+    },
+                  "9":  {
+                   "title": "Semantics",
+                   "id": 18,
+                   "attr": {
+                      "style": {}
+                   },
+                   "ideas": {
+                    "1":  {
+                     "title": "WordNet",
+                     "id": 19,
+                     "attr": {
+                        "style": {}
+                     },
+                     "ideas": {
+                      "1":  {
+                       "title": "Androutsopoulos2010",
+                       "id": 20,
+                       "attr": {
+                         "attachment": {
+                            "contentType": "text/html",
+                            "content": "\n@article{Androutsopoulos2010,\nabstract = {Paraphrasing methods recognize, generate, or extract phrases, sentences, or longer natural language expressions that convey almost the same information. Textual entailment methods, on the other hand, recognize, generate, or extract pairs of natural language expressions, such that a human who reads (and trusts) the first element of a pair would most likely infer that the other element is also true. Paraphrasing can be seen as bidirectional textual entailment and methods from the two areas are often similar. Both kinds of methods are useful, at least in principle, in a wide range of natural language processing applications, including question answering, summarization, text generation, and machine translation. We summarize key ideas from the two areas by considering in turn recognition, generation, and extraction methods, also pointing to prominent articles and resources.},\narchivePrefix = {arXiv},\narxivId = {0912.3747},\nauthor = {Androutsopoulos, Ion and Malakasiotis, Prodromos},\ndoi = {10.1613\/jair.2985},\neprint = {0912.3747},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_A survey of paraphrasing and textual entailment methods\\_Androutsopoulos, Malakasiotis.pdf:pdf},\nissn = {10769757},\njournal = {Journal of Artificial Intelligence Research},\nmendeley-groups = {PhD\/Semantics\/WordNet},\npages = {135--187},\ntitle = {{A survey of paraphrasing and textual entailment methods}},\nvolume = {38},\nyear = {2010}\n}\n}"
+                          },
+                          "style": {}
+                       },
+                       "ideas": {
+                          }
+                        }
+                      },
+                      "2":  {
+                       "title": "Androutsopoulos2010",
+                       "id": 21,
+                       "attr": {
+                         "attachment": {
+                            "contentType": "text/html",
+                            "content": "\n@article{Androutsopoulos2010,\nabstract = {Paraphrasing methods recognize, generate, or extract phrases, sentences, or longer natural language expressions that convey almost the same information. Textual entailment methods, on the other hand, recognize, generate, or extract pairs of natural language expressions, such that a human who reads (and trusts) the first element of a pair would most likely infer that the other element is also true. Paraphrasing can be seen as bidirectional textual entailment and methods from the two areas are often similar. Both kinds of methods are useful, at least in principle, in a wide range of natural language processing applications, including question answering, summarization, text generation, and machine translation. We summarize key ideas from the two areas by considering in turn recognition, generation, and extraction methods, also pointing to prominent articles and resources.},\narchivePrefix = {arXiv},\narxivId = {0912.3747},\nauthor = {Androutsopoulos, Ion and Malakasiotis, Prodromos},\ndoi = {10.1613\/jair.2985},\neprint = {0912.3747},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_A survey of paraphrasing and textual entailment methods\\_Androutsopoulos, Malakasiotis.pdf:pdf},\nissn = {10769757},\njournal = {Journal of Artificial Intelligence Research},\nmendeley-groups = {PhD\/Semantics\/WordNet},\npages = {135--187},\ntitle = {{A survey of paraphrasing and textual entailment methods}},\nvolume = {38},\nyear = {2010}\n}\n}"
+                          },
+                          "style": {}
+                       },
+                       "ideas": {
+                          }
+                      }
+    },
+                    "10":  {
+                     "title": "Data Mining",
+                     "id": 22,
+                     "attr": {
+                        "style": {}
+                     },
+                     "ideas": {
+                      "1":  {
+                       "title": "Ananiadou2010a",
+                       "id": 23,
+                       "attr": {
+                         "attachment": {
+                            "contentType": "text/html",
+                            "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                          },
+                          "style": {}
+                       },
+                       "ideas": {
+                          }
+                        }
+    },
+                      "11":  {
+                       "title": "Biomedical IE",
+                       "id": 24,
+                       "attr": {
+                          "style": {}
+                       },
+                       "ideas": {
+                        "1":  {
+                         "title": "Ananiadou2006",
+                         "id": 25,
+                         "attr": {
+                           "attachment": {
+                              "contentType": "text/html",
+                              "content": "\n@article{Ananiadou2006,\nabstract = {With biomedical literature increasing at a rate of several thousand papers per week, it is impossible to keep abreast of all developments; therefore, automated means to manage the information overload are required. Text mining techniques, which involve the processes of information retrieval, information extraction and data mining, provide a means of solving this. By adding meaning to text, these techniques produce a more structured analysis of textual knowledge than simple word searches, and can provide powerful tools for the production and analysis of systems biology models.},\nauthor = {Ananiadou, Sophia and Kell, Douglas B and Tsujii, Jun-ichi},\ndoi = {10.1016\/j.tibtech.2006.10.002},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2006\/2006\\_Text mining and its potential applications in systems biology.\\_Ananiadou, Kell, Tsujii.pdf:pdf},\nisbn = {0167-7799 (Print)$\\backslash$r0167-7799 (Linking)},\nissn = {01677799},\njournal = {Trends in biotechnology},\nmendeley-groups = {PhD\/Biomedical IE},\nnumber = {12},\npages = {571--579},\npmid = {17045684},\ntitle = {{Text mining and its potential applications in systems biology.}},\nvolume = {24},\nyear = {2006}\n}\n}"
+                            },
+                            "style": {}
+                         },
+                         "ideas": {
+                            }
+                          },
+                          "2":  {
+                           "title": "Ananiadou2006a",
+                           "id": 26,
+                           "attr": {
+                             "attachment": {
+                                "contentType": "text/html",
+                                "content": "\n@book{Ananiadou2006a,\nabstract = {With the volume of biomedical research growing exponentially worldwide, the demand for information retrieval expertise in the field has never been greater. Here\\\"{A}\\^{o}s the first guide for bioinformatics practitioners that puts the full range of biological text mining tools and techniques at their fingertips in a single dedicated volume. It describes the methods of natural language processing (NLP) and their applications in the biological domain, and spells out the various lexical, terminological, and ontological resources at their disposal \\\"{A}\" and how best to utilize them. Readers see how terminology management tools like term extraction and term structuring facilitate effective mining, and learn ways to readily identify biomedical named entities and abbreviations. The book explains how to deploy various information extraction methods for biological applications. It helps professionals evaluate and optimize text mining systems, and includes techniques for integrating text mining and data mining efforts to further facilitate biological analyses. Both a critical review of the state of the art and a solution-focused guide packed with \\\"{A}\\'{u}how to\\\"{A}\\`{u} insight, this first-of- its-kind work will prove indispensable for seasoned and first-time bioinformatics researchers alike.},\nauthor = {Ananiadou, Sophia and McNaught, John},\nbooktitle = {Computational Linguistics},\nchapter = {Abbreviati},\neditor = {Ananiadou, Sophia and McNaught, John},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2006\/2006\\_Text Mining for Biology and Biomedicine\\_Ananiadou, McNaught.pdf:pdf},\ninstitution = {University of Cambridge},\nissn = {08912017},\nmendeley-groups = {PhD\/Biomedical IE},\nnumber = {1},\npages = {135--140},\npublisher = {Artech House},\ntitle = {{Text Mining for Biology and Biomedicine}},\nurl = {http:\/\/www.mitpressjournals.org\/doi\/abs\/10.1162\/coli.2007.33.1.135},\nvolume = {33},\nyear = {2006}\n}\n}"
+                              },
+                              "style": {}
+                           },
+                           "ideas": {
+                              }
+                          }
+    },
+                        "12":  {
+                         "title": "Zorana",
+                         "id": 27,
+                         "attr": {
+                            "style": {}
+                         },
+                         "ideas": {
+                          "1":  {
+                           "title": "arampatzis1998",
+                           "id": 28,
+                           "attr": {
+                             "attachment": {
+                                "contentType": "text/html",
+                                "content": "\n@article{arampatzis_1998,\nauthor = {Arampatzis, Avi T and Tsoris, T and Koster, Cornelis H A and {Van Der Weide}, Th. P},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/1998\/1998\\_Phase-based information retrieval\\_Arampatzis et al.pdf:pdf},\njournal = {Information Processing \\& Management},\nmendeley-groups = {PhD\/Zorana,PhD},\nnumber = {6},\npages = {693--707},\npublisher = {Elsevier},\ntitle = {{Phase-based information retrieval}},\nvolume = {34},\nyear = {1998}\n}\n}"
+                              },
+                              "style": {}
+                           },
+                           "ideas": {
+                              }
+                            }
+    },
+                          "13":  {
+                           "title": "Gene Regulatory Networks",
+                           "id": 29,
+                           "attr": {
+                              "style": {}
+                           },
+                           "ideas": {
+                            "1":  {
+                             "title": "Ananiadou2010a",
+                             "id": 30,
+                             "attr": {
+                               "attachment": {
+                                  "contentType": "text/html",
+                                  "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                                },
+                                "style": {}
+                             },
+                             "ideas": {
+                                }
+                              }
+    },
+                            "14":  {
+                             "title": "Unsorted",
+                             "id": 31,
+                             "attr": {
+                                "style": {}
+                             },
+                             "ideas": {
+                                }
+    },
+                              "15":  {
+                               "title": "State Of The Art Presentation",
+                               "id": 32,
+                               "attr": {
+                                  "style": {}
+                               },
+                               "ideas": {
+                                "1":  {
+                                 "title": "Ananiadou2010a",
+                                 "id": 33,
+                                 "attr": {
+                                   "attachment": {
+                                      "contentType": "text/html",
+                                      "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                                    },
+                                    "style": {}
+                                 },
+                                 "ideas": {
+                                    }
+                                  }
+    },
+                                "16":  {
+                                 "title": "Review",
+                                 "id": 34,
+                                 "attr": {
+                                    "style": {}
+                                 },
+                                 "ideas": {
+                                  "1":  {
+                                   "title": "Arighi2013",
+                                   "id": 35,
+                                   "attr": {
+                                      "style": {}
+                                   },
+                                   "ideas": {
+                                      }
+                                    }
+    },
+                                  "17":  {
+                                   "title": "Relation Extraction",
+                                   "id": 36,
+                                   "attr": {
+                                      "style": {}
+                                   },
+                                   "ideas": {
+                                    "1":  {
+                                     "title": "Events",
+                                     "id": 37,
+                                     "attr": {
+                                        "style": {}
+                                     },
+                                     "ideas": {
+                                      "1":  {
+                                       "title": "Aone2000",
+                                       "id": 38,
+                                       "attr": {
+                                         "attachment": {
+                                            "contentType": "text/html",
+                                            "content": "\n@article{Aone2000,\nabstract = {This paper reports on a large-scale, end-to-end relation and event extraction system. At present, the system extracts a total of 100 types of relations and events, which represents a much wider coverage than is typical of extraction systems. The system consists of three specialized pattem-based tagging modules, a high-precision co-reference resolution module, and a configurable template generation module. We report quantitative evaluation results, analyze the results in detail, and discuss future directions.},\nauthor = {Aone, Chinatsu and Ramos-Santacruz, Mila},\ndoi = {10.3115\/974147.974158},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2000\/2000\\_REES A Large-Scale Relation and Event Extraction System\\_Aone, Ramos-Santacruz.pdf:pdf},\njournal = {Sixth conference on Applied Natural Language Processing},\nmendeley-groups = {PhD\/Relation Extraction\/Events},\npages = {76--83},\ntitle = {{REES: A Large-Scale Relation and Event Extraction System}},\nurl = {http:\/\/dl.acm.org\/citation.cfm?id=974158},\nyear = {2000}\n}\n}"
+                                          },
+                                          "style": {}
+                                       },
+                                       "ideas": {
+                                          }
+                                        }
+                                      },
+                                      "2":  {
+                                       "title": "Aone2000",
+                                       "id": 39,
+                                       "attr": {
+                                         "attachment": {
+                                            "contentType": "text/html",
+                                            "content": "\n@article{Aone2000,\nabstract = {This paper reports on a large-scale, end-to-end relation and event extraction system. At present, the system extracts a total of 100 types of relations and events, which represents a much wider coverage than is typical of extraction systems. The system consists of three specialized pattem-based tagging modules, a high-precision co-reference resolution module, and a configurable template generation module. We report quantitative evaluation results, analyze the results in detail, and discuss future directions.},\nauthor = {Aone, Chinatsu and Ramos-Santacruz, Mila},\ndoi = {10.3115\/974147.974158},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2000\/2000\\_REES A Large-Scale Relation and Event Extraction System\\_Aone, Ramos-Santacruz.pdf:pdf},\njournal = {Sixth conference on Applied Natural Language Processing},\nmendeley-groups = {PhD\/Relation Extraction\/Events},\npages = {76--83},\ntitle = {{REES: A Large-Scale Relation and Event Extraction System}},\nurl = {http:\/\/dl.acm.org\/citation.cfm?id=974158},\nyear = {2000}\n}\n}"
+                                          },
+                                          "style": {}
+                                       },
+                                       "ideas": {
+                                          }
+                                      },
+                                        "3":  {
+                                         "title": "Ananiadou2010a",
+                                         "id": 40,
+                                         "attr": {
+                                           "attachment": {
+                                              "contentType": "text/html",
+                                              "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                                            },
+                                            "style": {}
+                                         },
+                                         "ideas": {
+                                            }
+                                      },
+                                          "4":  {
+                                           "title": "Arighi2013",
+                                           "id": 41,
+                                           "attr": {
+                                              "style": {}
+                                           },
+                                           "ideas": {
+                                              }
+                                      }
+    },
+                                    "18":  {
+                                     "title": "Systems Biology",
+                                     "id": 42,
+                                     "attr": {
+                                        "style": {}
+                                     },
+                                     "ideas": {
+                                      "1":  {
+                                       "title": "Ananiadou2010a",
+                                       "id": 43,
+                                       "attr": {
+                                         "attachment": {
+                                            "contentType": "text/html",
+                                            "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                                          },
+                                          "style": {}
+                                       },
+                                       "ideas": {
+                                          }
+                                        }
+    },
+                                      "19":  {
+                                       "title": "PubMed",
+                                       "id": 44,
+                                       "attr": {
+                                          "style": {}
+                                       },
+                                       "ideas": {
+                                        "1":  {
+                                         "title": "Ananiadou2010a",
+                                         "id": 45,
+                                         "attr": {
+                                           "attachment": {
+                                              "contentType": "text/html",
+                                              "content": "\n@article{Ananiadou2010a,\nabstract = {Systems biology recognizes in particular the importance of interactions between biological components and the consequences of these interactions. Such interactions and their downstream effects are known as events. To computationally mine the literature for such events, text mining methods that can detect, extract and annotate them are required. This review summarizes the methods that are currently available, with a specific focus on protein-protein interactions and pathway or network reconstruction. The approaches described will be of considerable value in associating particular pathways and their components with higher-order physiological properties, including disease states.},\nauthor = {Ananiadou, Sophia and Pyysalo, Sampo and Tsujii, Jun'ichi and Kell, Douglas B},\ndoi = {10.1016\/j.tibtech.2010.04.005},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2010\/2010\\_Event extraction for systems biology by text mining the literature.\\_Ananiadou et al(2).pdf:pdf},\nissn = {1879-3096},\njournal = {Trends in biotechnology},\nkeywords = {Data Mining,Documentation,Gene Regulatory Networks,Periodicals as Topic,Protein Interaction Mapping,PubMed,Signal Transduction,Systems Biology,Terminology as Topic},\nmendeley-groups = {PhD\/State Of The Art Presentation,PhD\/Relation Extraction},\nmonth = jul,\nnumber = {7},\npages = {381--90},\npmid = {20570001},\ntitle = {{Event extraction for systems biology by text mining the literature.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/20570001},\nvolume = {28},\nyear = {2010}\n}\n}"
+                                            },
+                                            "style": {}
+                                         },
+                                         "ideas": {
+                                            }
+                                          }
+    }
