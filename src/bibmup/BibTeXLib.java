@@ -105,6 +105,21 @@ public class BibTeXLib {
 	}
 
 
+	public void moreSpecific(){
+		for (BibTeXEntry entry:entries) {
+			HashSet<MupObject> parents = new HashSet<MupObject>();
+			parents.addAll(entry.parents);
+			for (MupObject parent:parents) {
+				// if entry.parents contains any children of parent
+				if (entry.containsAnyAsParent(parent.children)) {
+					entry.parents.remove(parent);
+					parent.children.remove(entry);
+					System.out.println("Removed parent "+parent.name+"  from "+entry.name+" (keeping only most specific category).");
+				}
+			}
+		}
+			
+	}
 
 
 

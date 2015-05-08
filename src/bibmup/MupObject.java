@@ -1,5 +1,6 @@
 package bibmup;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -31,7 +32,21 @@ public class MupObject {
 		children.add(child);
 	}
 
+	public boolean isParentOf(MupObject p){
+		return (parents.contains(p));
+	}
+	
+	public boolean isChildOf(MupObject c){
+		return (children.contains(c));
+	}
 
-
-
+	public boolean containsAnyAsParent(Collection<MupObject> col) {
+		for (MupObject o:col) {
+			if (parents.contains(o)){
+				return true;
+			}
+		}
+		return false;
+	}
+	
 }

@@ -4,7 +4,6 @@ import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Random;
 
 public class MupTree  {
@@ -24,8 +23,7 @@ public class MupTree  {
 		}
 		String unsortedName = config.unsortedName;
 		MupObject unsorted = new MupObject(unsortedName);
-		db.ideas.put(unsortedName, unsorted);
-		unsorted.addParent(rootname, db.ideas);
+
 		int i = 0;
 		for (BibTeXEntry entry:db.entries) {
 			if (entry.parents.size() ==0){
@@ -33,8 +31,11 @@ public class MupTree  {
 				i++;
 			}
 		}
-		System.out.println(i+" unsorted entries added to node "+unsortedName);
-
+		if (i>0) {
+			db.ideas.put(unsortedName, unsorted);
+			unsorted.addParent(rootname, db.ideas);
+			System.out.println(i+" unsorted entries added to node "+unsortedName);
+		}
 	}
 
 	public void writeMindMup(String filename) throws IOException{
@@ -167,13 +168,13 @@ public class MupTree  {
 				sb.append("\\t");
 				break;
 			case '\n':
-				sb.append("\\n");
+				sb.append("<br>");
 				break;
 			case '\f':
 				sb.append("\\f");
 				break;
 			case '\r':
-				sb.append("\\r");
+				sb.append("<br>");
 				break;
 			default:
 				if (c < ' ') {

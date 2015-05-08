@@ -11,6 +11,7 @@ public class BibLibToMindMup {
 		            }
 		
 		           BibTeXLib db = new BibTeXLib(args[0], new Config());
+		           db.moreSpecific();
 		           MupTree tree = new MupTree(new Config(), db);
 		           tree.writeMindMup(args[1]);
 		           System.out.println("done");
