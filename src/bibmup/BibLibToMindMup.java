@@ -6,7 +6,7 @@ public class BibLibToMindMup {
 		Config config = new Config();
 
 		if(args.length < 2 ){
-			System.err.println("Usage: java " + BibTeXLib.class + " <Input file> <Output file>?");
+			System.err.println("Usage: java " + BibTeXLib.class + " <Input file> <Output file> [<Config file>]");
 
 			System.exit(-1);
 		}
