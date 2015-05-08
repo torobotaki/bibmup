@@ -47,3 +47,9 @@ Then once you get the output mup file, you need to upload it to MindMup. Notice 
 ## Why
 
 It sounded like a good idea, and it took me one day to make it work. 
+
+### Why in Java
+
+It's not you, it's me. 
+
+It's the only way it could take me a day to code this, currently.
