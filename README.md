@@ -26,7 +26,7 @@ In particular I exported this by selecting all the documents I wanted and did a 
 ### Type of nodes
 
 1. For actual bibliographical entries, it creates leaf nodes. It adds the whole BibTeX formatted reference as an attachment.
-2. It creates theme nodes, grouping entries, based on the entries keywords and other meta data. These nodes will be coloured randomly. 
+2. It creates theme nodes, grouping entries, based on the entries keywords and other meta data. These nodes will be coloured randomly, and listed alphabetically top to bottom. 
 
 ### Where it gets the categories
 
@@ -34,13 +34,13 @@ Based on my Mendeley experience, I have used keywords (author keywords), mendele
 
 Mendeley-groups are hierarchical, as they are folders in the library. This is the only thing that can provide hierarchy. BTW, the only way to get this type of metadata I found on Mendeley, was to copy my library as bibtex, not to export it. 
 
-A config file is in the works. Among other things it would allow to change the source of these categories to user-provided keys, flat or hierarchical. 
+A config file can be provided. Among other things it can allow the user to change the source of these categories to user-provided keys, flat or hierarchical. 
 
 ## How to use it
 
 Well, nothing really user friendly can be found here, ....for now?
 
-In short it should take two arguments, input and output file. 
+In short it should take two arguments, input and output file. A possible third argument is the config. See data/ for examples.
 
 Then once you get the output mup file, you need to upload it to MindMup. Notice all nodes (except for the root) should be collapsed by default, because it can get scary. 
 
