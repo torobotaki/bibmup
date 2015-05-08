@@ -79,8 +79,9 @@ public class BibTeXLib {
 					}
 				}
 			}
-
 		}
+		entry.addContent(bibtext+"\n}");
+		entries.add(entry);
 		buffer.close();
 		reader.close();
 	}

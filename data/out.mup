@@ -4,7 +4,7 @@
  "id": 1,
  "attr": {
     "style": {
-         "background": "#b5dee6"
+         "background": "#bce6dc"
 },
     "collapsed": false
  },
@@ -15,7 +15,7 @@
    "id": 2,
    "attr": {
       "style": {
-           "background": "#c0a1e6"
+           "background": "#e6c6b7"
 },
       "collapsed": true
    },
@@ -27,7 +27,7 @@
    "id": 3,
    "attr": {
       "style": {
-           "background": "#bde6c5"
+           "background": "#acbfe6"
 },
       "collapsed": true
    },
@@ -52,7 +52,7 @@
      "id": 5,
      "attr": {
         "style": {
-             "background": "#abb8e6"
+             "background": "#b1e6d0"
 },
         "collapsed": true
      },
@@ -91,6 +91,10 @@
      "title": "Arighi2013",
      "id": 8,
      "attr": {
+       "attachment": {
+          "contentType": "text/html",
+          "content": "\n@article{Arighi2013,\nabstract = {In many databases, biocuration primarily involves literature curation, which usually involves retrieving relevant articles, extracting information that will translate into annotations and identifying new incoming literature. As the volume of biological literature increases, the use of text mining to assist in biocuration becomes increasingly relevant. A number of groups have developed tools for text mining from a computer science\/linguistics perspective, and there are many initiatives to curate some aspect of biology from the literature. Some biocuration efforts already make use of a text mining tool, but there have not been many broad-based systematic efforts to study which aspects of a text mining tool contribute to its usefulness for a curation task. Here, we report on an effort to bring together text mining tool developers and database biocurators to test the utility and usability of tools. Six text mining systems presenting diverse biocuration tasks participated in a formal evaluation, and appropriate biocurators were recruited for testing. The performance results from this evaluation indicate that some of the systems were able to improve efficiency of curation by speeding up the curation task significantly (∼1.7- to 2.5-fold) over manual curation. In addition, some of the systems were able to improve annotation accuracy when compared with the performance on the manually curated set. In terms of inter-annotator agreement, the factors that contributed to significant differences for some of the systems included the expertise of the biocurator on the given curation task, the inherent difficulty of the curation and attention to annotation guidelines. After the task, annotators were asked to complete a survey to help identify strengths and weaknesses of the various systems. The analysis of this survey highlights how important task completion is to the biocurators' overall experience of a system, regardless of the system's high score on design, learnability and usability. In addition, strategies to refine the annotation guidelines and systems documentation, to adapt the tools to the needs and query types the end user might have and to evaluate performance in terms of efficiency, user interface, result export and traditional evaluation metrics have been analyzed during this task. This analysis will help to plan for a more intense study in BioCreative IV.},\nauthor = {Arighi, Cecilia N and Carterette, Ben and Cohen, K Bretonnel and Krallinger, Martin and Wilbur, W John and Fey, Petra and Dodson, Robert and Cooper, Laurel and {Van Slyke}, Ceri E and Dahdul, Wasila and Mabee, Paula and Li, Donghui and Harris, Bethany and Gillespie, Marc and Jimenez, Silvia and Roberts, Phoebe and Matthews, Lisa and Becker, Kevin and Drabkin, Harold and Bello, Susan and Licata, Luana and Chatr-Aryamontri, Andrew and Schaeffer, Mary L and Park, Julie and Haendel, Melissa and {Van Auken}, Kimberly and Li, Yuling and Chan, Juancarlos and Muller, Hans-Michael and Cui, Hong and Balhoff, James P and {Chi-Yang Wu}, Johnny and Lu, Zhiyong and Wei, Chih-Hsuan and Tudor, Catalina O and Raja, Kalpana and Subramani, Suresh and Natarajan, Jeyakumar and Cejuela, Juan Miguel and Dubey, Pratibha and Wu, Cathy},\ndoi = {10.1093\/database\/bas056},\nfile = {:home\/dvalsamou\/Documents\/Bibliography\/2013\/2013\\_An overview of the BioCreative 2012 Workshop Track III interactive text mining task.\\_Arighi et al.pdf:pdf},\nissn = {1758-0463},\njournal = {Database : the journal of biological databases and curation},\nkeywords = {biocreative,challenges,overview,relation extraction,review},\nmendeley-groups = {PhD\/Relation Extraction},\nmendeley-tags = {biocreative,challenges,overview,relation extraction,review},\nmonth = jan,\npages = {bas056},\npmid = {23327936},\ntitle = {{An overview of the BioCreative 2012 Workshop Track III: interactive text mining task.}},\nurl = {http:\/\/www.ncbi.nlm.nih.gov\/pubmed\/23327936},\nvolume = {2013},\nyear = {2013}\n}\n}"
+        },
         "style": {},
         "collapsed": true
      },
@@ -103,7 +107,7 @@
    "id": 9,
    "attr": {
       "style": {
-           "background": "#e6abb7"
+           "background": "#c4e6bd"
 },
       "collapsed": true
    },
@@ -129,7 +133,7 @@
    "id": 11,
    "attr": {
       "style": {
-           "background": "#d8b5e6"
+           "background": "#d8b4e6"
 },
       "collapsed": true
    },
@@ -155,7 +159,7 @@
    "id": 13,
    "attr": {
       "style": {
-           "background": "#a1e6c5"
+           "background": "#e6b8dc"
 },
       "collapsed": true
    },
@@ -166,7 +170,7 @@
      "id": 14,
      "attr": {
         "style": {
-             "background": "#b0cde6"
+             "background": "#e6e5af"
 },
         "collapsed": true
      },
@@ -207,7 +211,7 @@
    "id": 17,
    "attr": {
       "style": {
-           "background": "#e6d1b8"
+           "background": "#abe6cc"
 },
       "collapsed": true
    },
