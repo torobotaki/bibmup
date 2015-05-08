@@ -13,6 +13,9 @@ It outputs a .mup file which then can be uploaded to [Mindmup](http://mindmup.co
 
 The image above can be optained from the sample in.bib found in the "data" folder.
 
+[Click here](https://atlas.mindmup.com/2015/05/fa0da3c0d80701326af24e1209a4d6ff/bibmup_example/index.html) to check out the interactive mindmap example on [MindMup Atlas](http://atlas.mindmup.com).
+
+
 ## What input it expects
 ### In short
 a well-formated BibTeX file. 
