@@ -32,7 +32,7 @@ In particular I exported this by selecting all the documents I wanted and did a 
 
 Based on my Mendeley experience, I have used keywords (author keywords), mendeley-groups (Mendeley folders) and mendeley-tags (user specified keywords). I normalize them by capitalizing the first letters and removing any funny stuff. 
 
-Mendeley-groups are hierarchical, as they are folders in the library. This is the only thing that can provide hierarchy. 
+Mendeley-groups are hierarchical, as they are folders in the library. This is the only thing that can provide hierarchy. BTW, the only way to get this type of metadata I found on Mendeley, was to copy my library as bibtex, not to export it. 
 
 A config file is in the works. Among other things it would allow to change the source of these categories to user-provided keys, flat or hierarchical. 
 
