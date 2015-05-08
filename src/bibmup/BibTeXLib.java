@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.regex.Pattern;
 
 
 public class BibTeXLib {
@@ -72,7 +73,9 @@ public class BibTeXLib {
 					String keywords = line.split("=")[1];
 					String[] kwords = keywords.split(",");
 					for (String s:kwords) {
-						if (s.matches("[a-zA-Z]")) {
+//						Pattern.compile("stores.*store.*product").matcher(someString).find();
+
+						if (Pattern.compile("[a-zA-Z]").matcher(s).find()) {
 							s = makeTitle(s);
 							ideas = entry.addParent(s, ideas);
 						}
