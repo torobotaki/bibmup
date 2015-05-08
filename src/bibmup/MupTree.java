@@ -72,8 +72,8 @@ public class MupTree  {
 		else {
 			writer.write(",\n"+tabulation+"\""+rank+"\":  "+"{\n");
 		}
-		
-		
+
+
 		if(node.equals(root)){
 			writer.write("\"formatVersion\": 2,\n");
 		}
@@ -87,8 +87,13 @@ public class MupTree  {
 			writer.write(tabulation+"      \"content\": "+quote(node.attachment)+"\n");
 			writer.write(tabulation+"    },\n");
 		}
-		writer.write(tabulation+"    \"style\": {}\n");
-		writer.write(tabulation+"    \"colapsed\": \"true\"\n");
+		writer.write(tabulation+"    \"style\": {},\n");
+		if(node.equals(root)){
+			writer.write(tabulation+"    \"collapsed\": false\n");
+		}
+		else {
+			writer.write(tabulation+"    \"collapsed\": true\n");
+		}
 		writer.write(tabulation+" },\n");
 		writer.write(tabulation+" \"ideas\": {\n");
 		Integer childNo = 1;
