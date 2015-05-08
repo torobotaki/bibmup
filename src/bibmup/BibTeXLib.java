@@ -25,7 +25,7 @@ public class BibTeXLib {
 		while ((line = buffer.readLine()) != null) {
 			if (line.startsWith("@")) {
 				if (entry!=null){
-					entry.addContent(bibtext+"\n}");
+					entry.addContent(bibtext+"\n");
 					entries.add(entry);
 					bibtext = "";
 					name = "";
@@ -83,7 +83,7 @@ public class BibTeXLib {
 				}
 			}
 		}
-		entry.addContent(bibtext+"\n}");
+		entry.addContent(bibtext+"\n");
 		entries.add(entry);
 		buffer.close();
 		reader.close();
