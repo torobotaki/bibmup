@@ -148,32 +148,39 @@ public class MupTree  {
 			// TODO Auto-generated method stub
 			return o1.name.compareTo(o2.name);
 		}
-		
+
 	}
-	
+
 	public static String beautifyAttachment(String s){
 		String result = "";
-		String bib = quote(s);
+		String bib = escape(s);
 		HashMap<String, String> contents = getBasicsFromBib(s);
 		result+="<div><table>";
 		ArrayList<String> ks = new ArrayList<String>();
 		ks.addAll(contents.keySet());
-		result+=tableThis("Reference", contents.get("reference"));
-		ks.remove("reference");
-		result+=tableThis("title", contents.get("title"));
-		ks.remove("title");
-		result+=tableThis("author", contents.get("author"));
-		ks.remove("author");
-		result+=tableThis("year", contents.get("year"));
-		ks.remove("year");
-		
+		if(contents.containsKey("reference")) {
+			result+=tableThis("reference", contents.get("reference"));
+			ks.remove("reference");
+		}
+		if(contents.containsKey("title")) {
+			result+=tableThis("title", contents.get("title"));
+			ks.remove("title");
+		}
+		if(contents.containsKey("author")) {
+			result+=tableThis("author", contents.get("author"));
+			ks.remove("author");
+		}
+		if(contents.containsKey("year")) {
+			result+=tableThis("year", contents.get("year"));
+			ks.remove("year");
+		}		
 		for (String key:ks){
 			result+=tableThis(key, contents.get(key));
 		}
 		result +="</table></div><div><h2>BibTeX</h2><p>"+bib+"</p></div>";
 		return result;
 	}
-	
+
 	private static String tableThis(String key, String value) {
 		if (value.endsWith(",")) {
 			value = value.substring(0, value.length()-1);
@@ -185,7 +192,7 @@ public class MupTree  {
 		result+="</tr>";
 		return result;
 	}
-	
+
 	public static HashMap<String, String> getBasicsFromBib(String s){
 		HashMap<String, String> result = new HashMap<String, String>();
 		String[] lines = s.split("\n");
@@ -195,7 +202,7 @@ public class MupTree  {
 					String ref = line.split("\\{")[1].replace(",","");
 					result.put("reference", ref);
 				}
-				else {
+				else if (line.contains("=")){
 					String key = line.split("=")[0].trim();
 					String value = line.split("=")[1].replaceAll("\\{|\\}", "").trim();
 					result.put(key, value);
@@ -204,7 +211,7 @@ public class MupTree  {
 		}
 		return result;
 	}
-	public static String quote(String string) {
+	public static String escape(String string) {
 		if (string == null || string.length() == 0) {
 			return "\"\"";
 		}
@@ -215,7 +222,7 @@ public class MupTree  {
 		StringBuilder sb = new StringBuilder(len + 4);
 		String       t;
 
-		sb.append('"');
+//		sb.append('"');
 		for (i = 0; i < len; i += 1) {
 			c = string.charAt(i);
 			switch (c) {
@@ -254,8 +261,18 @@ public class MupTree  {
 				}
 			}
 		}
-		sb.append('"');
+//		sb.append('"');
 		return sb.toString();
 	}
+	
+	public static String quote(String s) {
+		if (s == null || s.length() == 0) {
+			return "\"\"";
+		}
+
+	s ="\""+escape(s)+"\"";	
+		return s;
+	}
+	
 
 }
