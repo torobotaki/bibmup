@@ -102,7 +102,7 @@ public class MupTree  {
 		if (node.attachment.length()!=0){
 			writer.write(tabulation+"   \"attachment\": {\n");
 			writer.write(tabulation+"      \"contentType\": \"text/html\",\n");
-			writer.write(tabulation+"      \"content\": "+beautifyAttachment(node.attachment)+"\n");
+			writer.write(tabulation+"      \"content\": "+quote(beautifyAttachment(node.attachment))+"\n");
 			writer.write(tabulation+"    },\n");
 		}
 		//		  "style": {
