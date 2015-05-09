@@ -4,7 +4,9 @@ import java.awt.Color;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Random;
 import java.util.TreeSet;
 
@@ -100,7 +102,7 @@ public class MupTree  {
 		if (node.attachment.length()!=0){
 			writer.write(tabulation+"   \"attachment\": {\n");
 			writer.write(tabulation+"      \"contentType\": \"text/html\",\n");
-			writer.write(tabulation+"      \"content\": "+quote(node.attachment)+"\n");
+			writer.write(tabulation+"      \"content\": "+beautifyAttachment(node.attachment)+"\n");
 			writer.write(tabulation+"    },\n");
 		}
 		//		  "style": {
@@ -147,6 +149,60 @@ public class MupTree  {
 			return o1.name.compareTo(o2.name);
 		}
 		
+	}
+	
+	public static String beautifyAttachment(String s){
+		String result = "";
+		String bib = quote(s);
+		HashMap<String, String> contents = getBasicsFromBib(s);
+		result+="<div><table>";
+		ArrayList<String> ks = new ArrayList<String>();
+		ks.addAll(contents.keySet());
+		result+=tableThis("Reference", contents.get("reference"));
+		ks.remove("reference");
+		result+=tableThis("title", contents.get("title"));
+		ks.remove("title");
+		result+=tableThis("author", contents.get("author"));
+		ks.remove("author");
+		result+=tableThis("year", contents.get("year"));
+		ks.remove("year");
+		
+		for (String key:ks){
+			result+=tableThis(key, contents.get(key));
+		}
+		result +="</table></div><div><h2>BibTeX</h2><p>"+bib+"</p></div>";
+		return result;
+	}
+	
+	private static String tableThis(String key, String value) {
+		if (value.endsWith(",")) {
+			value = value.substring(0, value.length()-1);
+		}
+		String result="";
+		result+="<tr>";
+		result+="<td><b>"+key+"</b></td>";
+		result+="<td>"+value+"</td>";
+		result+="</tr>";
+		return result;
+	}
+	
+	public static HashMap<String, String> getBasicsFromBib(String s){
+		HashMap<String, String> result = new HashMap<String, String>();
+		String[] lines = s.split("\n");
+		for (String line:lines){
+			if (line.length() >1){
+				if (line.startsWith("@")){
+					String ref = line.split("\\{")[1].replace(",","");
+					result.put("reference", ref);
+				}
+				else {
+					String key = line.split("=")[0].trim();
+					String value = line.split("=")[1].replaceAll("\\{|\\}", "").trim();
+					result.put(key, value);
+				}
+			}
+		}
+		return result;
 	}
 	public static String quote(String string) {
 		if (string == null || string.length() == 0) {
